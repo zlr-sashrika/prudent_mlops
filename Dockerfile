@@ -14,4 +14,4 @@ RUN pip install --no-cache-dir -r requirements.txt
 COPY . .
 
 # Command to run the application (modify as needed)
-CMD ["jupyter", "nbconvert", "--to", "python", "Prudent_3.2(Sentiment_Analysis).ipynb"]
+CMD ["jupyter", "nbconvert", "--to", "notebook", "--execute","--inplace", "Prudent_3.2(Sentiment_Analysis).ipynb"]
